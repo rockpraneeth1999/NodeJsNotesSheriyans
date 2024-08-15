@@ -1,0 +1,36 @@
+Node js is not a programming language, framework , library.
+Node js is a run time environment.
+
+Before Node js came into picture:
+Js cannot be used to make backend because it doesn't have the functionality to make backend applications.
+
+Ryan Dahl want to make backend apps using js.
+Google chrome has a V8 engine, which is open source, used to run js.
+V8 engine is coded in C++.
+
+Ryan Dahl made a wrapper around V8 which is in js, you write a code in js which is received by the wrapper layer then the C++ modules makes a serve with the code.
+
+That wrapper layer + V8 engine = Node JS.
+
+
+
+
+Install Node js:
+Download Node js LTS(Long Term Support)
+open CMD
+	node -v
+	npm -v
+
+NPM - Node Package Manager, is like a package store which has all open source packages.
+
+Working with Node js:
+npm init (initialize a node js project)
+npm init -y (no questions asked)
+
+npm init creates a package.json file, which contains everything about that node js application.
+
+Node provides a bunch of modules, you use those modules to code.
+const your_variable = require("module_name")
+require modules of callback and async not promisified from docs
+run the file with node
+	node file_name.js

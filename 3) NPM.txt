@@ -1,0 +1,7 @@
+NPM:
+Node Package Manager (old name)
+Now there is no official abbreviation for NPM
+
+Node js core will come with modules
+NPM get us package
+
