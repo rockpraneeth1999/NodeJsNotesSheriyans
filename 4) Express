@@ -1,0 +1,47 @@
+Express:
+It is a npm package.
+It is a framework.
+Manages everything from receiving a request and sending the response.
+
+Framework:
+Provides a flow for the user/coder for software development.
+It provides a foundation/template where the coder can add their code.
+
+Working with express:
+
+const express = require("express");
+->get the package from npm
+->the package returns a function
+
+const app = express();
+->express() will give all the functionalities of express
+->use app variable to make express application
+->use this app to make routes
+
+app.get("/home", function (req,res){
+res.send("Welcome Home");
+});
+->app.get(route, requestHandler);
+->route is the url after the domain
+->request handler is a middleware
+
+app.listen(3000);
+->app.listen(PORT);
+->run the server on the PORT
+
+Nodemon:
+npm install -g
+-> -g is global, no need to install again and again
+
+Middlewares:
+website->middleware->route->response
+->performs some task before reaching the requestHandler
+
+app.use(function(req,res,next){
+//do some work
+next();
+});
+->put this before the routr
+->runs the app.use() for any request before reaching the route
+->next() forwards the request
+->you can put multiple middlewares before the routes and every middleware will execute
